@@ -338,6 +338,23 @@
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="OwlCarousel/docs/assets/vendors/jquery.min.js"></script>
 <script src="OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
-<script src="carousel.js"></script>
+<script>
+     $('.owl-carousel').owlCarousel({
+    loop: true,
+    center: true,
+    nav: true,
+    navText: ["<img class='button-carousel' id='left-button' src='icon/Left_button_hover.png'>",
+        "<img class='button-carousel' id='right-button' src='icon/Right_button_hover.png'>"],
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 2000,
+    responsive: {
+        600: {
+            items: 2
+        },
+    }
+})
+</script>
 
 </html>
